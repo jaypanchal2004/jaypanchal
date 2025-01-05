@@ -1,0 +1,236 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #F5F5F5;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .ml5 {
+            position: relative;
+            font-weight: 400;
+            font-size: 5.5em;
+            color: #fcfdfd;
+        }
+
+        .ml5 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.1em;
+            padding-right: 0.05em;
+            padding-bottom: 0.15em;
+            line-height: 1em;
+        }
+
+        .ml5 .line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 3px;
+            width: 100%;
+            background-color: #ff7043;
+            transform-origin: 0.5 0;
+        }
+
+        .ml5 .letters {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            color: #FF7043;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .header h3 {
+            font-size: 2.5em;
+            font-weight: 500;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Styling */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #424242;
+            margin: 30px 0;
+        }
+
+        strong {
+            color: #FF7043;
+        }
+
+        /* Links Styling */
+        a {
+            color: #FF7043;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff5722;
+        }
+
+        /* Projects List Styling */
+        ol li {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        ol li:hover {
+            transform: translateX(10px);
+            color: #FF7043;
+        }
+
+        /* Button Styling */
+        .back-btn {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 30px;
+            background-color: #FF7043;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-align: center;
+            width: auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff5722;
+            transform: scale(1.1);
+			color: white;
+        }
+
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .ml5 {
+                font-size: 4em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .header h3 {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="ml5">
+            <span class="text-wrapper">
+                <span class="letters letters-left">RESUME</span>
+            </span>
+        </h1>
+    </center>
+    
+    <div class="container">
+        <div class="header">
+            <h3>Jay Panchal</h3>
+            <p><a href="mailto:jaypanchal202223@gmail.com"><strong>jaypanchal202223@gmail.com</strong></a></p>
+            <p><strong>Telegram = +13802124907</strong></p>
+        </div>
+
+        <hr>
+
+        <p><strong><u>Professional Summary:</u></strong></p>
+        <p>A dreamer, creator, and innovator passionate about AI and web development, specializing in creating scalable web applications and automating real-world processes to improve efficiency. Recognized for transforming a manual paper academic system into a Google-Classroom-like platform that saved significant time for students and staff.</p>
+
+        <hr>
+        
+        <p><strong><u>Education:</u></strong></p>
+        <p>2025 - Present: Pursuing 5-Year Integrated MSc in Computer Science (AI) at Department of Computer Science, Gujarat University</p>
+        <p>2024: Third Year (pursuing), DCSGU | 8.3 SGPA</p>
+        <p>2023-24: Second Year, DCSGU | 8.2 SGPA</p>
+        <p>2022-23: First Year, DCSGU | 8.3 SGPA</p>
+
+        <hr>
+        
+        <p><strong><u>Skills:</u></strong></p>
+        <p>Python, Java, C/C++, PHP, JavaScript, HTML5, CSS3, jQuery, ReactJS, MySQL, SQLite</p>
+
+        <hr>
+        
+        <p><strong><u>Projects:</u></strong></p>
+        <ol>
+            <li><strong>Hospital Management System:</strong> Optimized healthcare operations.</li>
+            <li><strong>Internal Evaluation Management System (IEMS):</strong> A web-based platform automating assignment management, grading, and student progress tracking for educational institutions.</li>
+        </ol>
+
+        <hr>
+
+        <p>As I continue my journey in AI and web development, I strive to build tools and systems that empower and simplify lives. Let's connect and build something impactful!</p>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-btn">Back to Home</a>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml5 .line',
+                opacity: [0.5, 1],
+                scaleX: [0, 1],
+                easing: "easeInOutExpo",
+                duration: 700
+            }).add({
+                targets: '.ml5 .line',
+                duration: 600,
+                easing: "easeOutExpo",
+                translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+            }).add({
+                targets: '.ml5 .letters-left',
+                opacity: [0, 1],
+                translateX: ["0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=300'
+            }).add({
+                targets: '.ml5 .letters-right',
+                opacity: [0, 1],
+                translateX: ["-0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+            }).add({
+                targets: '.ml5',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+</body>
+</html>
+
